@@ -1,0 +1,18 @@
+header {
+  font-family: 'Corben', cursive, sans-serif;
+  width: 260px;
+  padding: 80px 0 0 80px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.nav-menu {
+  
+}
+
+.nav-menu li{
+  font-size: 18px;
+  margin-bottom: 50px;
+}
