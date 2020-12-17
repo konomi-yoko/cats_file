@@ -1,18 +1,297 @@
+nav a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+nav a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+a:hover::after {
+  transform: scale(1, 1);
+}
+
+/* -------------header-------------- */
 header {
   font-family: 'Corben', cursive, sans-serif;
   width: 260px;
   padding: 80px 0 0 80px;
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
 }
 
-.nav-menu {
-  
+.nav-menu li{
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
 }
 
-.nav-menu li{
-  font-size: 18px;
-  margin-bottom: 50px;
+/* ---------------main---------------- */
+main {
+  max-width: 1920px;
+  height: 100vh;
+}
+
+.main-wrapper {
+  /* max-width: 183.33333333vh; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  z-index: 0;
+}
+
+main h1 {
+  width: 230px;
+  height: 194px;
+  font-family: 'Corben', cursive, sans-serif;
+  font-size: 75px;
+  letter-spacing: 7px;
+  line-height: 1.3em;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9;
+}
+
+.main-inner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.ball-wapper {
+  width: 43.055555555vh;
+  height: 39.5238095vh;
+  position: absolute;
+  top: 0;
+  right: 21.0559006%;
+}
+
+.ball {
+  width: 13.1481481vh;
+  height: 12.777777777vh;
+  cursor: pointer;
+  position: absolute;
+  bottom: 1.3888888888vw;
+  left: 0;
+}
+
+.ball img{
+  width: 13.1481481vh;
+  height: 12.777777777vh;
+}
+
+
+.top-hand1 {
+  width: 40.3703703vh;
+  height: 38.4259259vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(-38.4259259vh);
+  transition: all .2s;
+}
+
+.top-hand1.on {
+  transform: translateY(0);
+}
+
+.top-hand1 img {
+  width: 40.3703703vh;
+  height: 38.4259259vh;
+}
+
+.fish-wrapper {
+  width: 30.3703703vh;
+  height: 46.4814814vh;
+  position: absolute;
+  left: 16.1458333333%;
+  bottom: 0;
+}
+
+.fish{
+  width: 26.7592592vh;
+  height: 17.5vh;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fish img {
+  width: 26.7592592vh;
+  height: 17.5vh;
+ }
+
+.top-hand2 img{
+  width: 23.7962962vh;
+  height: 46.7592592vh;
+}
+
+.top-hand2{
+  width: 23.7962962vh;
+  height: 46.7592592vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(46.7592592vh);
+  transition: all .2s;
+}
+
+.top-hand2.on {
+  transform: translateY(0);
+}
+
+.food-wrapper {
+  width: 64.166666666vh;
+  height: 38.333333vh;
+  position: absolute;
+  bottom: 9.7222222%;
+  right: 0;
+}
+
+.food img {
+  width: 32.037037vh;
+  height: 36.8518518vh;
+}
+
+.food {
+  width: 32.037037vh;
+  height: 36.8518518vh;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.top-hand3 img {
+  width: 45.833333333vh;
+  height: 30.3703703vh;
+}
+
+.top-hand3 {
+  width: 45.833333333vh;
+  height: 30.3703703vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateX(45.833333333vh);
+  transition: all .2s;
+}
+
+.top-hand3.on {
+  transform: translateX(0);
+}
+
+.ball {
+	animation: puru 2.2s infinite;
+}
+@keyframes puru {
+    0% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+    40% {
+      transform: translate(0px, 0px) rotateZ(0deg)
+    }
+    50% {
+        transform: translate(2px, 0px) rotateZ(2deg)
+    }
+    60% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+    100% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+}
+
+.fish {
+	animation: furu 2.2s infinite;
+}
+@keyframes furu {
+    0% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+    2% {
+        transform: translate(2px, 2px) rotateZ(2deg)
+    }
+    4% {
+        transform: translate(0px, 2px) rotateZ(0deg)
+    }
+    6% {
+        transform: translate(2px, 0px) rotateZ(-2deg)
+    }
+    8% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+    10% {
+        transform: translate(2px, 2px) rotateZ(2deg)
+    }
+    12% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+    14% {
+        transform: translate(2px, 0px) rotateZ(-2deg)
+    }
+    16% {
+        transform: translate(0px, 2px) rotateZ(0deg)
+    }
+    18% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+    100% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+}
+
+.food {
+	animation: koro 2.2s infinite;
+
+}
+@keyframes koro {
+    0% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+    20% {
+      transform: translate(0px, 0px) rotateZ(0deg)
+    }
+    25% {
+        transform: translate(2px, 0px) rotateZ(-1deg)
+    }
+    30% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+    100% {
+        transform: translate(0px, 0px) rotateZ(0deg)
+    }
+}
+
+/* -----------------footer------------------ */
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+}
+
+footer p {
+  font-size: 12px;
 }
