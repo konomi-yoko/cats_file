@@ -1,9 +1,9 @@
-nav a {
+.nav-menu a {
   position: relative;
   display: inline-block;
   text-decoration: none;
 }
-nav a::after {
+.nav-menu a::after {
   position: absolute;
   bottom: -4px;
   left: 0;

@@ -190,6 +190,7 @@ main h2 {
 .touch-wrapper h2{
   width: 100%;
   border-top: #666 dotted 5px;
+  margin-top: 60px;
 }
 
 .touch-inner {
