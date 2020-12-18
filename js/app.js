@@ -26,15 +26,40 @@ var mySwiper = new Swiper ('.swiper-container', {
   },
 });
 
-// window.addEventListener('DOMContentLoaded', function(){
-//   $(window).on('load scroll',function (){
-//     $('.animation').each(function(){
-//       var target = $(this).offset().top;
-//       var scroll = $(window).scrollTop();
-//       var height = $(window).height();
-//       if (scroll > target - height){
-//         $(this).addClass('active');
-//       }
-//     });
-//   });
-// });
+// 横からスライド
+window.addEventListener('DOMContentLoaded', function(){
+  $(window).on('load scroll',function (){
+    $('.slidein').each(function(){
+      var target = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var height = $(window).height();
+      if (scroll > target - height){
+        $(this).addClass('action');
+      }
+    });
+  });
+
+  // 下からふわっと
+  $(window).on('load scroll',function (){
+    $('.animation').each(function(){
+      var target = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var height = $(window).height();
+      if (scroll > target - height){
+        $(this).addClass('active');
+      }
+    });
+  });
+
+  // 右からスライド
+  $(window).on('load scroll',function (){
+    $('.slide-right').each(function(){
+      var target = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var height = $(window).height();
+      if (scroll > target - height){
+        $(this).addClass('action2');
+      }
+    });
+  });
+});

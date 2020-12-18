@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: new
+Template Name: about
 */
 ?>
 <!DOCTYPE html>
@@ -61,7 +61,41 @@ Template Name: new
             <li class="anime5 animation">ファイルです</li>
           </ul>
         </li>
-        <li class="swiper-slide">
+        <li class="swiper-slide cat4">
+          <ul class="info-wrapper">
+            <li class="info1">
+              <a href="#">
+                <button>
+                  <p>History</p>
+                </button>
+              </a>
+              <a href="#">
+                <button>
+                  <p>Emotions</p>
+                </button>
+              </a>
+            </li>
+            <li class="info2">
+              <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/img/silhouette.png" alt="">
+              </div>
+              <a href="">
+                <h1>Cats File</h1>
+              </a>
+            </li>
+            <li class="info3">
+              <a href="#">
+                <button>
+                  <p>Foods</p>
+                </button>
+              </a>
+              <a href="#">
+                <button>
+                  <p>Foods</p>
+                </button>
+              </a>
+            </li>
+          </ul>
 
         </li>
     </ul>
