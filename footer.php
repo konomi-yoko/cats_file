@@ -1,6 +1,6 @@
 
   <footer>
-    <p>Copyright &copy; Shinohara. ALL RIGHTS RESERVED.</p>
+    <p>Copyright &copy; Cats File</p>
   </footer>
 
  

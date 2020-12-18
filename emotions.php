@@ -26,16 +26,17 @@ Template Name: Emotions
 <body>
 <!-- header -->
   <header>
-    <nav>
-      <ul class="nav-menu">
-        <li>Home</li>
-        <li>About</li>
-        <li>History</li>
-        <li>Emotions</li>
-        <li>Foods</li>
-        <li>Type</li>
-      </ul>
-    </nav>
+  <?php
+      if ( has_nav_menu( 'header' )){
+          // メニューの設定を配列で指定
+          $args = array(
+              'theme_location' => 'header',
+              'container' => false,
+              'items_wrap'      => '<ul class="nav-menu">%3$s</ul>',
+          );
+          wp_nav_menu( $args ); 
+      }; 
+    ?>
   </header>
 
   <main>
@@ -107,8 +108,36 @@ Template Name: Emotions
             </p>
         </li>
       </ul>
-
     </div>
+
+    <div class="touch-wrapper">
+      <h2>猫を撫でて喜ばせてみよう</h2>
+      <ul class="touch-inner">
+        <li class="alert1 a-head"></li>
+        <li class="alert2 a-breast-top"></li>
+        <li class="alert2 a-breast-side"></li>
+        <li class="alert3 a-hand"></li>
+        <li class="alert4 a-belly"></li>
+        <li class="alert5 a-leg"></li>
+        <li class="alert6 a-hip"></li>
+        <li class="alert7 a-tailon"></li>
+        <li class="alert3 a-tail"></li>
+      </ul>
+    </div>
+
+    <!-- モーダル -->
+    <div id="modalArea" class="modalArea">
+      <div id="modalBg" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <p class="modaltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        </div>
+        <div id="closeModal" class="closeModal">
+          ×
+        </div>
+      </div>
+    </div>
+
   </main>
 
   

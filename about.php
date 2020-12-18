@@ -23,16 +23,17 @@ Template Name: about
 <body>
     <header>
         <!-- header -->
-        <nav>
-          <ul class="nav-menu">
-            <li>Home</li>
-            <li>About</li>
-            <li>History</li>
-            <li>Emotions</li>
-            <li>Foods</li>
-            <li>Type</li>
-          </ul>
-        </nav>
+      <?php
+      if ( has_nav_menu( 'header' )){
+          // メニューの設定を配列で指定
+          $args = array(
+              'theme_location' => 'header',
+              'container' => false,
+              'items_wrap'      => '<ul class="nav-menu">%3$s</ul>',
+          );
+          wp_nav_menu( $args ); 
+      }; 
+    ?>
         
     </header>
 
@@ -64,12 +65,12 @@ Template Name: about
         <li class="swiper-slide cat4">
           <ul class="info-wrapper">
             <li class="info1">
-              <a href="#">
+              <a href="http://kon.pupu.jp/wp/history/">
                 <button>
                   <p>History</p>
                 </button>
               </a>
-              <a href="#">
+              <a href="http://kon.pupu.jp/wp/emotions/">
                 <button>
                   <p>Emotions</p>
                 </button>
@@ -79,19 +80,19 @@ Template Name: about
               <div>
                 <img src="<?php echo get_template_directory_uri(); ?>/img/silhouette.png" alt="">
               </div>
-              <a href="">
+              <a href="http://kon.pupu.jp/wp/">
                 <h1>Cats File</h1>
               </a>
             </li>
             <li class="info3">
-              <a href="#">
+              <a href="http://kon.pupu.jp/wp/foods/">
                 <button>
                   <p>Foods</p>
                 </button>
               </a>
-              <a href="#">
+              <a href="http://kon.pupu.jp/wp/type/">
                 <button>
-                  <p>Foods</p>
+                  <p>Type</p>
                 </button>
               </a>
             </li>

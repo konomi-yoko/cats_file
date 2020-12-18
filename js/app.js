@@ -63,3 +63,73 @@ window.addEventListener('DOMContentLoaded', function(){
     });
   });
 });
+
+window.addEventListener('DOMContentLoaded', function(){
+  $('.alert1').click(function(){
+      $('#modalArea').fadeIn();
+      $('.modaltext').text('いいよ！');
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea').fadeOut();
+  });  
+});
+
+window.addEventListener('DOMContentLoaded', function(){
+  $('.alert2').click(function(){
+      $('#modalArea').fadeIn();
+      $('.modaltext').text('ん～ふつう');
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea').fadeOut();
+  });  
+});
+
+window.addEventListener('DOMContentLoaded', function(){
+  $('.alert3').click(function(){
+      $('#modalArea').fadeIn();
+      $('.modaltext').text('どうでもいい');
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea').fadeOut();
+  });  
+});
+
+window.addEventListener('DOMContentLoaded', function(){
+  $('.alert4').click(function(){
+      $('#modalArea').fadeIn();
+      $('.modaltext').text('ぶっとばすわ');
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea').fadeOut();
+  });  
+});
+
+window.addEventListener('DOMContentLoaded', function(){
+  $('.alert5').click(function(){
+      $('#modalArea').fadeIn();
+      $('.modaltext').text('やだやだ');
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea').fadeOut();
+  });  
+});
+
+window.addEventListener('DOMContentLoaded', function(){
+  $('.alert6').click(function(){
+      $('#modalArea').fadeIn();
+      $('.modaltext').text('そこじゃない');
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea').fadeOut();
+  });  
+});
+
+window.addEventListener('DOMContentLoaded', function(){
+  $('.alert7').click(function(){
+      $('#modalArea').fadeIn();
+      $('.modaltext').text('たまらない！');
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea').fadeOut();
+  });  
+});

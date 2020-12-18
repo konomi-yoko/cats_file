@@ -1,5 +1,9 @@
+<?php
 
-
+/*
+Template Name: history
+*/
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -10,16 +14,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Corben:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/about.css">
   <?php wp_deregister_script('jquery'); ?>
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <title>Cat File</title>
 </head>
 
-<body>
-    <header>
-<!-- header -->
-      <?php
+  <header>
+  <?php
         if ( has_nav_menu( 'header' )){
             // メニューの設定を配列で指定
             $args = array(
@@ -30,15 +32,15 @@
             wp_nav_menu( $args ); 
         }; 
       ?>
-        <!-- <nav>
-          <ul class="nav-menu">
-            <li>Home</li>
-            <li>About</li>
-            <li>History</li>
-            <li>Emotions</li>
-            <li>Foods</li>
-            <li>Type</li>
-          </ul>
-        </nav> -->
-        
-    </header>
+    
+  </header>
+
+<body>
+    
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.autopager-1.0.0.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/app.js"></script>
+</body>
+</html>
