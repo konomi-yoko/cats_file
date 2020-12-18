@@ -96,7 +96,7 @@ Template Name: Emotions
             <img src="<?php echo get_template_directory_uri(); ?>/img/feel5.gif" alt="">
           </div>
             <p class="tail-txt">
-              俺にかまうな
+              かまわないで
             </p>
         </li>
         <li>
@@ -130,7 +130,7 @@ Template Name: Emotions
       <div id="modalBg" class="modalBg"></div>
       <div class="modalWrapper">
         <div class="modalContents">
-          <p class="modaltext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          <p class="modaltext"></p>
         </div>
         <div id="closeModal" class="closeModal">
           ×

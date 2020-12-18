@@ -146,7 +146,12 @@ main h2 {
   padding: 100px 0;
 }
 
+.tail-wapper {
+  width: 100%;
+}
+
 .tail-wapper h2 {
+  width: 100%;
   border-top: #666 dotted 5px;
 }
 
@@ -302,6 +307,7 @@ main h2 {
   width: 70%;
   max-width: 400px;
   height: 300px;
+  padding: 20px;
   background-color: #fff;
   display: flex;
   justify-content: center;

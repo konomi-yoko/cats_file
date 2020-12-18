@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', function(){
 window.addEventListener('DOMContentLoaded', function(){
   $('.alert1').click(function(){
       $('#modalArea').fadeIn();
-      $('.modaltext').text('いいよ！');
+      $('.modaltext').text('いいね！すきすき！なでてなでて！');
   });
   $('#closeModal , #modalBg').click(function(){
     $('#modalArea').fadeOut();
@@ -127,9 +127,15 @@ window.addEventListener('DOMContentLoaded', function(){
 window.addEventListener('DOMContentLoaded', function(){
   $('.alert7').click(function(){
       $('#modalArea').fadeIn();
-      $('.modaltext').text('たまらない！');
+      $('.modaltext').text('ひああああああああしゅごいいいいいいい！！最高すぎるその手止めないで最高オブ最高たまらない！');
+      $(".modaltext").css('font-size', '30px');
+      $(".modaltext").css('font-family', 'メイリオ', 'Meiryo', 'sans-serif');
+      $(".modaltext").css('font-weight', 'bold');
   });
   $('#closeModal , #modalBg').click(function(){
+    $(".modaltext").css('font-size', '');
+    $(".modaltext").css('font-family', '', '', '');
+    $(".modaltext").css('font-weight', '');
     $('#modalArea').fadeOut();
   });  
 });
